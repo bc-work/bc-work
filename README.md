@@ -7,13 +7,13 @@
 
 
 
-## ✨ About Me
+## 🪪 About Me
 **Name**: Bogdan-Irinel  
 **Target Role**: Software Tester  
 
 I am a detail-oriented and passionate software tester with a knack for uncovering hidden issues and ensuring seamless user experiences. I thrive on collaboration, precision, and continuous improvement to deliver reliable, high-quality software products.  
 
-### Core Skills
+## 👨‍💻Core Skills
 - ✔️ Manual and exploratory testing  
 - ✔️ Designing and executing detailed test cases  
 - ✔️ Reporting and tracking bugs effectively  
@@ -21,7 +21,7 @@ I am a detail-oriented and passionate software tester with a knack for uncoverin
 
 ---
 
-## 🚀 Career Objective
+## 🧭 Career Objective
 I aim to contribute to innovative software development teams by applying my testing expertise to ensure flawless performance, usability, and reliability. My ultimate goal is to enhance product quality while growing and learning alongside a dedicated team.
 
 ---
