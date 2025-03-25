@@ -1,5 +1,12 @@
 # 🎯 Professional Profile - Software Tester
 
+
+<p align="center">
+  <img src="https://github.com/bc-work/bc-work/blob/main/Coworkers%20fixing%20bugs.gif" alt="Banner" width="550">
+</p>
+
+
+
 ## ✨ About Me
 **Name**: Bogdan-Irinel  
 **Target Role**: Software Tester  
