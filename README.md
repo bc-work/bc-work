@@ -18,102 +18,12 @@ To contribute to the creation of high-quality software by identifying and addres
 
 ## 🛠️ Portfolio
 
-### 📋 Test Cases
-
-#### 1. Altex Search - Nonexistent Product
-**Description**:  
-Verify the functionality of the "Caută produsul dorit" search form when a nonexistent product is entered.
-
-**Preconditions**:  
-- None.  
-
-**Steps to Reproduce**:  
-1. Open the [Altex website](https://altex.ro/).  
-2. Click on the "Caută produsul dorit" search form.  
-3. Enter the term "zxcvbnm".  
-
-**Expected Result**:  
-The search form should display a message for nonexistent products.  
-
----
-
-#### 2. Altex Search - Autocomplete
-**Description**:  
-Verify the autocomplete functionality of the "Caută produsul dorit" search form when three or more characters are entered.
-
-**Preconditions**:  
-- The user must enter at least three characters.  
-
-**Steps to Reproduce**:  
-1. Open the [Altex website](https://altex.ro/).  
-2. Click on the "Caută produsul dorit" search form.  
-3. Enter the term "mas".  
-
-**Expected Result**:  
-The search form should display relevant autocomplete data.  
-
----
-
-### 🐞 Reported Bugs
-
-#### 1. Broke at a Click of a Button
-**Priority**: P1  
-**Severity**: Critical  
-
-**Description**:  
-Out of the three links used for sorting transactions, only one ("Date-Time") is functional.
-
-**Steps to Reproduce**:  
-1. Visit [Banking Project](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login).  
-2. Click the "Customer Login" button.  
-3. Click the "---Your Name---" dropdown menu.  
-4. Select a client (e.g., "Hermoine Granger").  
-5. Click the "Login" button.  
-6. The balance is $5096.  
-7. Click the "Transactions" button.  
-8. Click the "Reset" button.  
-9. All transactions are erased without any warning.  
-10. Click the "Back" button.  
-11. The balance is now $0; all money from the account has disappeared.  
-
-**Expected Result**:  
-The "Reset" button should reset the calendar sorting only.  
-
-**Actual Result**:  
-The "Reset" button erases all transactions and money from the account without any warning.  
-
----
-
-#### 2. Customer, Accounts, and Money - Erased
-**Priority**: P1  
-**Severity**: Critical  
-
-**Description**:  
-The system incorrectly allows the deletion of non-empty accounts.
-
-**Steps to Reproduce**:  
-1. Visit [Banking Project](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login).  
-2. Click the "Customer Login" button.  
-3. Click the "---Your Name---" dropdown menu.  
-4. Select "Hermoine Granger" as the client.  
-5. Click the "Login" button.  
-6. The balance is $5096.  
-7. Click the "Logout" button.  
-8. Click the "Home" button.  
-9. Click the "Bank Manager Login" button.  
-10. Click the "Customers" button.  
-11. Click the "Delete" button in the "Hermoine Granger" row.  
-12. Click the "Home" button.  
-13. Click the "Customer Login" button.  
-14. Click the "---Your Name---" dropdown menu.  
-15. Select "Hermoine Granger."  
-16. The customer, accounts (both empty and non-empty), and money are erased.  
-
-**Expected Result**:  
-The deletion of a non-empty account should not be allowed.  
-
-**Actual Result**:  
-The deletion of a non-empty account is permitted.  
+| **Type**      | **Title**                        | **Description**                                                                                                                                                            | **Priority/Severity**      | **Steps to Reproduce**                                                                                                                                                            | **Expected Result**                                                                                               | **Actual Result**                                                                                                    |
+|---------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Test Case     | Altex Search - Nonexistent Product | Verify the "Caută produsul dorit" search form for nonexistent products.                                                                                                  | N/A                         | 1. Open [Altex](https://altex.ro/).<br>2. Click the "Caută produsul dorit" form.<br>3. Enter "zxcvbnm".                                                                          | Display a message for nonexistent products.                                                                       | N/A                                                                                                                 |
+| Test Case     | Altex Search - Autocomplete       | Verify autocomplete functionality for "Caută produsul dorit" when three or more characters are entered.                                                                 | N/A                         | 1. Open [Altex](https://altex.ro/).<br>2. Click the "Caută produsul dorit" form.<br>3. Enter "mas".                                                                              | Display relevant autocomplete results.                                                                            | N/A                                                                                                                 |
+| Bug           | Broke at a Click of a Button     | The "Reset" button erases all transactions and money without warning, instead of resetting the sorting.                                                                 | Priority: P1<br>Severity: Critical | 1. Go to [Banking Project](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login).<br>2. Use "Customer Login".<br>3. Select "Hermoine Granger".<br>4. Test "Reset". | The "Reset" button should only reset the calendar sorting.                                                       | The "Reset" button erases transactions and money from the account.                                                 |
+| Bug           | Customer, Accounts, and Money - Erased | The system allows the deletion of non-empty accounts, leading to loss of customer data and funds.                                                                        | Priority: P1<br>Severity: Critical | 1. Go to [Banking Project](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login).<br>2. Use "Bank Manager Login" and delete "Hermoine Granger".<br>3. Recheck data.| Non-empty accounts should not be deletable.                                                                       | Non-empty accounts, funds, and the customer record are all deleted.                                                |
 
 ---
 
